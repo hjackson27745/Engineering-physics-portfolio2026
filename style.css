@@ -136,14 +136,16 @@ ul {
 }
 
 .site-footer a {
-  color: #ffd6ea;  /* soft light pink */
+  color: #ffd6ea;
   text-decoration: none;
   font-weight: 600;
+  border-bottom: 1px solid #ffd6ea;
+  padding-bottom: 2px;
 }
 
 .site-footer a:hover {
-  color: #ffffff;  /* brightens on hover */
-  text-decoration: underline;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
 }
 
 @media (max-width: 640px) {
