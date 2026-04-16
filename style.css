@@ -136,12 +136,13 @@ ul {
 }
 
 .site-footer a {
-  color: #ffd6ea;
+  color: #ffd6ea;  /* soft light pink */
   text-decoration: none;
   font-weight: 600;
 }
 
 .site-footer a:hover {
+  color: #ffffff;  /* brightens on hover */
   text-decoration: underline;
 }
 
