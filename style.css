@@ -81,6 +81,16 @@ main {
   color: #5a1a44;
 }
 
+.card a {
+  color: #8a2c5f;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.card a:hover {
+  text-decoration: underline;
+}
+
 .project-list {
   display: grid;
   gap: 1rem;
