@@ -4,142 +4,201 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Final Fabrication Project | Helena Jackson</title>
-  <link rel="stylesheet" href="style.css?v=3" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
+
 <body>
-  <header class="site-header">
+  <nav class="topbar">
+    <div class="container topbar-inner">
+      <a class="logomark" href="index.html">HJ / Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="fabrication.html">Fabrication</a>
+        <a href="thermometry.html">Thermometry</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="project-hero">
     <div class="container">
+      <p class="page-label">Project Entry 01</p>
       <h1>Final Fabrication Project</h1>
-      <p class="subtitle">Summer Fabrication Course</p>
+      <p class="subtitle">Summer Fabrication Course · Smart Plant Pot · Sensors</p>
       <p class="intro">
-        This project is one of the pieces of work I am most proud of because it gave me
-        the opportunity to move from concept to physical implementation while working
-        through design choices, fabrication constraints, and iterative problem-solving.
+        A hands-on project focused on moving from concept to physical implementation while
+        working through design choices, fabrication constraints, and iterative problem-solving.
       </p>
     </div>
   </header>
 
-  <nav class="navbar">
-    <div class="container nav-links">
-      <a href="index.html">Home</a>
-      <a href="fabrication.html">Fabrication Project</a>
-      <a href="thermometry.html">Thermometry Project</a>
-    </div>
-  </nav>
+  <main class="container project-layout">
+    <aside class="project-sidebar">
+      <p class="sidebar-label">Project Summary</p>
+      <dl>
+        <div>
+          <dt>Focus</dt>
+          <dd>Fabrication and prototyping</dd>
+        </div>
+        <div>
+          <dt>System</dt>
+          <dd>Smart plant pot</dd>
+        </div>
+        <div>
+          <dt>Components</dt>
+          <dd>Moisture sensor, humidity sensor, LEDs, OLED display</dd>
+        </div>
+        <div>
+          <dt>Theme</dt>
+          <dd>Translating sensor readings into readable feedback</dd>
+        </div>
+      </dl>
+    </aside>
 
-  <main class="container">
-    <section class="card">
-      <h2>Project Overview</h2>
-      <p>
-        This project was completed as part of a summer fabrication course and involved
-        designing and building a physical system from the ground up. More than just a final
-        class assignment, it was a hands-on experience in translating an idea into a real
-        object while working through the practical realities of fabrication.
-      </p>
-      <p>
-        What makes this project especially meaningful to me is that it required both
-        technical thinking and direct engagement with the build process. It pushed me to
-        refine my design, troubleshoot unexpected challenges, and think carefully about how
-        choices in materials, construction, and geometry affect final performance.
-      </p>
-    </section>
+    <article class="project-document">
+      <section class="project-section">
+        <p class="section-kicker">Overview</p>
+        <h2>From idea to working hardware</h2>
+        <p>
+          This project was completed as part of a summer fabrication course and involved
+          designing and building a physical system from the ground up. More than just a final
+          class assignment, it was a hands-on experience in translating an idea into a real
+          object while working through the practical realities of fabrication.
+        </p>
+        <p>
+          What makes this project especially meaningful to me is that it required both
+          technical thinking and direct engagement with the build process. It pushed me to
+          refine my design, troubleshoot unexpected challenges, and think carefully about how
+          choices in materials, construction, and geometry affect final performance.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>Goal</h2>
-      <p>
-        The goal of this project was to design and fabricate a functional smart plant pot that helps users monitor plant health through real-time environmental feedback. One of the main components is a soil moisture sensor that detects three moisture conditions: dry, moist, and wet. Each level is represented by a corresponding LED indicator light—red signals soil that is too dry, green indicates an ideal moisture level, and blue shows that the soil is overly wet.
+      <section class="project-section">
+        <p class="section-kicker">Goal</p>
+        <h2>Design a responsive plant-monitoring system</h2>
+        <p>
+          The goal of this project was to design and fabricate a functional smart plant pot
+          that helps users monitor plant health through real-time environmental feedback.
+          One of the main components is a soil moisture sensor that detects three moisture
+          conditions: dry, moist, and wet.
+        </p>
 
-        An additional humidity sensor was also incorporated into the design, with a yellow LED added after the initial prototype stage to indicate surrounding humidity conditions. Another key feature of the project is the OLED display screen, which provides a clear and condensed overview of the sensor readings. This interactive display allows users to better understand their plant’s needs and make informed decisions about watering and overall plant care based on moisture and humidity data.
+        <div class="callout-grid">
+          <div class="callout">
+            <strong>Dry</strong>
+            <span>Red LED indicates soil that needs watering.</span>
+          </div>
+          <div class="callout">
+            <strong>Moist</strong>
+            <span>Green LED indicates an ideal moisture level.</span>
+          </div>
+          <div class="callout">
+            <strong>Wet</strong>
+            <span>Blue LED indicates soil that may be overly wet.</span>
+          </div>
+        </div>
 
-      </p>
-      <p>
-        This meant thinking about the project at multiple levels: the conceptual idea, the
-        physical design, the fabrication process itself, and the adjustments needed once the
-        real build introduced practical constraints.
-      </p>
-    </section>
+        <p>
+          An additional humidity sensor was also incorporated into the design, with a yellow
+          LED added after the initial prototype stage to indicate surrounding humidity
+          conditions. Another key feature is the OLED display screen, which provides a clear,
+          condensed overview of the sensor readings.
+        </p>
 
-    <section class="card">
-      <h2>Design and Fabrication Process</h2>
-      <p>
-        The project began with an initial concept and was developed through a series of
-        design choices related to structure, materials, and fabrication strategy. As I moved
-        from planning into construction, I had to think carefully about how the build would
-        actually come together in practice rather than only in theory.
-      </p>
-      <p>
-        One of the most valuable parts of the process was learning how to connect design
-        intent with real implementation. Fabrication required attention to detail, patience,
-        and flexibility, especially when small decisions affected the final assembly and
-        performance of the system.
-      </p>
-    </section>
+        <p class="annotation">
+          Design note: the project had to work at multiple levels — concept, physical design,
+          fabrication process, and revision once real build constraints appeared.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>Challenges and Iteration</h2>
-      <p>
-        A major reason this is one of my favorite projects is that it involved genuine
-        iteration. As with many hands-on projects, not everything worked perfectly on the
-        first attempt. The fabrication process revealed issues that were not obvious at the
-        design stage, which meant I had to troubleshoot, revise, and adapt.
-      </p>
-      <p>
-        Working through those challenges was one of the most rewarding parts of the project.
-        It taught me how important it is to treat setbacks as part of the engineering process
-        rather than as failures. Revising the design and improving the build deepened my
-        understanding of how physical systems behave in practice.
-      </p>
-    </section>
+      <section class="project-section">
+        <p class="section-kicker">Process</p>
+        <h2>Design, fabrication, and iteration</h2>
+        <p>
+          The project began with an initial concept and was developed through a series of
+          design choices related to structure, materials, and fabrication strategy. As I moved
+          from planning into construction, I had to think carefully about how the build would
+          actually come together in practice rather than only in theory.
+        </p>
+        <p>
+          One of the most valuable parts of the process was learning how to connect design
+          intent with real implementation. Fabrication required attention to detail, patience,
+          and flexibility, especially when small decisions affected the final assembly and
+          performance of the system.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>Why I Am Proud of This Project</h2>
-      <p>
-        This project stands out to me because it best reflects the type of work I most enjoy:
-        hands-on, iterative, and grounded in building something tangible. It combined design,
-        fabrication, and problem-solving in a way that felt both challenging and deeply
-        engaging.
-      </p>
-      <p>
-        I am especially proud of this project because it represents growth in the way I
-        approach technical work. It strengthened my confidence in building and troubleshooting
-        physical systems, and it showed me how much I enjoy work that brings together theory,
-        experimentation, and real-world implementation.
-      </p>
-    </section>
+      <section class="project-section">
+        <p class="section-kicker">Challenge</p>
+        <h2>Treating setbacks as part of engineering</h2>
+        <p>
+          A major reason this is one of my favorite projects is that it involved genuine
+          iteration. As with many hands-on projects, not everything worked perfectly on the
+          first attempt. The fabrication process revealed issues that were not obvious at the
+          design stage, which meant I had to troubleshoot, revise, and adapt.
+        </p>
+        <p>
+          Working through those challenges was one of the most rewarding parts of the project.
+          It taught me how important it is to treat setbacks as part of the engineering
+          process rather than as failures.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>Skills Developed</h2>
-      <ul>
-        <li>Hands-on fabrication and construction</li>
-        <li>Iterative design and troubleshooting</li>
-        <li>Translating concepts into physical systems</li>
-        <li>Working within real material and build constraints</li>
-        <li>Problem-solving through direct experimentation</li>
-      </ul>
-    </section>
+      <section class="project-section">
+        <p class="section-kicker">Reflection</p>
+        <h2>Why this project matters to me</h2>
+        <p>
+          This project stands out to me because it best reflects the type of work I most enjoy:
+          hands-on, iterative, and grounded in building something tangible. It combined design,
+          fabrication, and problem-solving in a way that felt both challenging and deeply
+          engaging.
+        </p>
+        <p>
+          I am especially proud of this project because it represents growth in the way I
+          approach technical work. It strengthened my confidence in building and troubleshooting
+          physical systems, and it showed me how much I enjoy work that brings together theory,
+          experimentation, and real-world implementation.
+        </p>
+      </section>
 
-    <section class="card">
-      <h2>Project Images</h2>
-      <p>
-        I plan to add images from the build process and final result here. These will help
-        show the progression from initial concept to finished fabricated system.
-      </p>
+      <section class="project-section">
+        <p class="section-kicker">Skills Developed</p>
+        <h2>Technical takeaways</h2>
+        <ul class="skill-list">
+          <li>Hands-on fabrication and construction</li>
+          <li>Iterative design and troubleshooting</li>
+          <li>Translating concepts into physical systems</li>
+          <li>Working within real material and build constraints</li>
+          <li>Problem-solving through direct experimentation</li>
+        </ul>
+      </section>
 
-      <!-- Example image block:
-      <img src="images/fabrication-project.jpg" alt="Final fabrication project" class="project-image" />
-      <p class="caption">Final fabricated project.</p>
-      -->
-    </section>
+      <section class="project-section">
+        <p class="section-kicker">Images</p>
+        <h2>Project images</h2>
+        <p>
+          Add images from the build process and final result here to show the progression from
+          initial concept to finished fabricated system.
+        </p>
+
+        <!-- Example:
+        <figure>
+          <img src="images/fabrication-project.jpg" alt="Final fabricated smart plant pot" class="project-image" />
+          <figcaption class="caption">Final fabricated smart plant pot prototype.</figcaption>
+        </figure>
+        -->
+      </section>
+    </article>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container">
-      <p>© 2026 Helena Jackson</p>
-      <p>
-        <a href="https://www.linkedin.com/in/helena-jackson-457bb52a4/" target="_blank">
-          LinkedIn
-        </a>
-      </p>
+      © 2026 Helena Jackson · Engineering Physics Portfolio
     </div>
   </footer>
 </body>

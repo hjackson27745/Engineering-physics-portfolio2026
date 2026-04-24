@@ -3,132 +3,165 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thermometry Analysis | Helena Jackson </title>
-  <link rel="stylesheet" href="style.css?v=2" />
+  <title>Thermometry Analysis | Helena Jackson</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=5" />
 </head>
+
 <body>
-  <header class="site-header">
+  <nav class="topbar">
+    <div class="container topbar-inner">
+      <a class="logomark" href="index.html">HJ / Portfolio</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="fabrication.html">Fabrication</a>
+        <a class="active" href="thermometry.html">Thermometry</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="project-hero">
     <div class="container">
+      <p class="page-label">Project Entry 02</p>
       <h1>Thermometry Analysis for AR Coating Autoclave</h1>
-      <p class="subtitle">
-        Technical analysis in support of laboratory fabrication work
-      </p>
+      <p class="subtitle">CMB Lab · Thermal Instrumentation · Autoclave Analysis</p>
       <p class="intro">
-        This project focused on better understanding thermometry and its application to a small
-        thermometer used on an autoclave involved in fabricating anti-reflection coatings for
-        telescope-related applications.
+        A technical analysis project focused on temperature measurement and interpretation
+        in a small autoclave system used for anti-reflection coating fabrication.
       </p>
     </div>
   </header>
 
-  <nav class="navbar">
-    <div class="container nav-links">
-      <a href="index.html">Home</a>
-      <a href="fabrication.html">Fabrication Project</a>
-      <a href="thermometry.html">Thermometry Project</a>
-    </div>
-  </nav>
+  <main class="container project-layout">
+    <aside class="project-sidebar">
+      <p class="sidebar-label">Project Summary</p>
+      <dl>
+        <div>
+          <dt>Focus</dt>
+          <dd>Thermometry and measurement interpretation</dd>
+        </div>
+        <div>
+          <dt>System</dt>
+          <dd>Small autoclave for AR coating fabrication</dd>
+        </div>
+        <div>
+          <dt>Context</dt>
+          <dd>Harvard Kovac CMB lab</dd>
+        </div>
+        <div>
+          <dt>Theme</dt>
+          <dd>Understanding reliability and stability in real equipment</dd>
+        </div>
+      </dl>
+    </aside>
 
-  <main class="container">
-    <section class="card">
-      <h2>Project Overview</h2>
-      <p>
-        This work was developed as a technical submission connected to research and fabrication
-        work in the Harvard Kovac CMB lab. The project centered on understanding temperature
-        measurement in a small autoclave system used in the production of AR coatings.
-      </p>
-      <p>
-        Even though the submission itself was concise, the project represents an important kind
-        of engineering and research work: using physics-based reasoning to better understand a
-        real experimental system and the reliability of its measurements.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Problem</h2>
-      <p>
-        Accurate temperature interpretation is important when working with fabrication systems,
-        especially when process conditions can affect the quality and consistency of the final result.
-        In this case, the project focused on understanding how to interpret the behavior and limitations
-        of a small thermometer associated with the autoclave system.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Approach</h2>
-      <p>
-        Add details here about how you approached the problem. For example, you might include:
-      </p>
-      <ul>
-        <li>what questions you were trying to answer</li>
-        <li>what assumptions or approximations you made</li>
-        <li>whether you compared expected and observed thermal behavior</li>
-        <li>what physical reasoning or calculations guided your analysis</li>
-      </ul>
-    </section>
-
-    <section class="card">
-      <h2>Findings and Relevance</h2>
-      <p>
-        Add a short explanation of the main conclusions from your submission. Even a simple conclusion
-        is valuable if it shows clear reasoning and relevance to the system.
-      </p>
-      <p>
-        This project matters to me because it reflects another side of the work I enjoy: taking a
-        real-world technical question, breaking it down carefully, and using physical reasoning to
-        make the system more understandable and useful.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>What I Learned</h2>
-      <p>
-        This project strengthened my interest in instrumentation, thermal systems, and the practical
-        interpretation of measurements in laboratory settings. It also reinforced how important it is
-        to connect theory with the realities of how devices behave in practice.
-      </p>
-    </section>
-
-    <section class="card">
-      <h2>Figures and PDF Excerpt</h2>
-      <p>
-
-<figure>
-<img src="images/127_auto_cycle.jpeg" alt="Thermometry comparison plot for the 127°C cycle" class="project-image" />
-      <figcaption class="caption">
-    <strong>Figure 1:</strong> Aligned autoclave cycles for the 127°C program. Individual cycles are shown along with the mean profile and ±1 standard deviation band.
-  </figcaption>
-</figure>
-
-<figure>
-<img src="images/135_auto_cycle.jpeg" alt="Thermometry comparison plot for the 135°C cycle" class="project-image" />
-      <figcaption class="caption">
-    <strong>Figure 1:</strong> Aligned autoclave cycles for the 135°C program. Individual cycles are
-shown along with the mean profile and ±1 standard deviation band.
-The aligned cycle plots show the heating, hold, and cooling behavior for both
-programs. The 127°C cycles are tightly grouped, indicating consistent behavior
-across runs. In contrast, the 135°C cycles show more spread during the hold
-region, along with visibly higher noise. This suggests that the system is less
-stable at the higher setpoint, particularly during steady-state.
-  </figcaption>
-</figure>
-
+    <article class="project-document">
+      <section class="project-section">
+        <p class="section-kicker">Overview</p>
+        <h2>Understanding a real thermal system</h2>
         <p>
-  <strong>Full Report:</strong>
-  <a href="Autoclave_new_report_helena_2026.pdf" target="_blank">
-    View Full Analysis (PDF) here →
-  </a>
-        
-      <!-- Example image block:
-      <img src="images/thermometry-figure.png" alt="Thermometry figure" class="project-image" />
-      <p class="caption">Caption describing the figure or analysis.</p>
-      -->
-    </section>
+          This work was developed as a technical submission connected to research and fabrication
+          work in the Harvard Kovac CMB lab. The project centered on understanding temperature
+          measurement in a small autoclave system used in the production of AR coatings.
+        </p>
+        <p>
+          Even though the submission itself was concise, the project represents an important
+          kind of engineering and research work: using physics-based reasoning to better
+          understand a real experimental system and the reliability of its measurements.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">Problem</p>
+        <h2>Why temperature interpretation matters</h2>
+        <p>
+          Accurate temperature interpretation is important when working with fabrication
+          systems, especially when process conditions can affect the quality and consistency
+          of the final result. In this case, the project focused on understanding how to
+          interpret the behavior and limitations of a small thermometer associated with the
+          autoclave system.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">Approach</p>
+        <h2>Questions guiding the analysis</h2>
+        <p>
+          This section can be expanded with details from the full report. Useful points to
+          include are the questions you were trying to answer, the assumptions or
+          approximations you made, and whether expected behavior was compared with observed
+          thermal behavior.
+        </p>
+        <ul class="skill-list">
+          <li>What thermal behavior was expected during the cycle?</li>
+          <li>How consistent were repeated autoclave runs?</li>
+          <li>Where did the system appear most stable or least stable?</li>
+          <li>What did the measurements suggest about instrument limitations?</li>
+        </ul>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">Findings</p>
+        <h2>Cycle behavior and relevance</h2>
+        <p>
+          The aligned cycle plots show the heating, hold, and cooling behavior for both
+          programs. The 127°C cycles are tightly grouped, indicating consistent behavior
+          across runs. In contrast, the 135°C cycles show more spread during the hold region,
+          along with visibly higher noise.
+        </p>
+        <p class="annotation">
+          Interpretation: the system appears less stable at the higher setpoint, particularly
+          during steady-state operation.
+        </p>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">Figures</p>
+        <h2>Thermal cycle plots</h2>
+
+        <figure>
+          <img src="images/127_auto_cycle.jpeg" alt="Thermometry comparison plot for the 127°C cycle" class="project-image" />
+          <figcaption class="caption">
+            <strong>Figure 1:</strong> Aligned autoclave cycles for the 127°C program. Individual
+            cycles are shown along with the mean profile and ±1 standard deviation band.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img src="images/135_auto_cycle.jpeg" alt="Thermometry comparison plot for the 135°C cycle" class="project-image" />
+          <figcaption class="caption">
+            <strong>Figure 2:</strong> Aligned autoclave cycles for the 135°C program. Individual
+            cycles are shown along with the mean profile and ±1 standard deviation band.
+          </figcaption>
+        </figure>
+
+        <p class="report-link">
+          <strong>Full Report:</strong>
+          <a href="Autoclave_new_report_helena_2026.pdf" target="_blank">View Full Analysis PDF →</a>
+        </p>
+      </section>
+
+      <section class="project-section">
+        <p class="section-kicker">Reflection</p>
+        <h2>What I learned</h2>
+        <p>
+          This project strengthened my interest in instrumentation, thermal systems, and the
+          practical interpretation of measurements in laboratory settings. It also reinforced
+          how important it is to connect theory with the realities of how devices behave in
+          practice.
+        </p>
+      </section>
+    </article>
   </main>
 
-  <footer class="site-footer">
+  <footer>
     <div class="container">
-      <p>© 2026 Your Name</p>
+      © 2026 Helena Jackson · Engineering Physics Portfolio
     </div>
   </footer>
 </body>

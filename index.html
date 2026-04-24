@@ -3,105 +3,158 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Engineering Physics Portfolio | Helena Jackson </title>
-  <link rel="stylesheet" href="style.css?v=2" />
+  <title>Engineering Physics Portfolio | Helena Jackson</title>
+
+  <!-- Optional: remove these if you do not want Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css?v=4" />
 </head>
 <body>
-  <header class="site-header">
-  <div class="container header-content">
-    <div class="header-text">
-      <h1>Helena Jackson</h1>
-      <p class="subtitle">Engineering Physics Portfolio</p>
-      <p class="intro">
-        I am an undergraduate Engineering Physics student interested in experimental systems,
-        fabrication, material science and analysis, thermal instrumentation, and applied
-        problem-solving. My work combines hands-on building with technical analysis, with a
-        focus on understanding how physical systems behave in practice and how design choices
-        affect performance.
-      </p>
-    </div>
-
-    <div class="header-image">
-      <img src="images/Headshot1.jpeg" alt="Portrait of Helena Jackson">
-    </div>
-  </div>
-</header>
-
-
-  <nav class="navbar">
-    <div class="container nav-links">
-      <a href="index.html">Home</a>
-      <a href="fabrication.html">Fabrication Project</a>
-      <a href="thermometry.html">Thermometry Project</a>
+  <nav class="topbar">
+    <div class="container topbar-inner">
+      <a class="logomark" href="index.html">HJ / Portfolio</a>
+      <div class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="fabrication.html">Fabrication</a>
+        <a href="thermometry.html">Thermometry</a>
+        <a href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
-  <main class="container">
-    <section class="card">
-      <h2>About Me</h2>
-      <p>
-  I am especially interested in projects that show the intersection between physics and engineering:
-  fabrication, instrumentation, thermal systems, and experimental analysis. I enjoy
-  work that requires both conceptual understanding and practical execution, whether that
-  means building and iterating on a physical device or analyzing measurements from a real
-  laboratory system. This portfolio highlights projects that reflect that approach.
-</p>
-    </section>
-
-    <section class="card">
-      <h2>Selected Projects</h2>
-      <div class="project-list">
-        <div class="project-item">
-          <h3><a href="fabrication.html">Final Fabrication Project</a></h3>
-          <p>
-            A hands-on fabrication project centered on designing, building, and iterating a
-            physical system from concept to a finished prototype and subsequently a working product. This project reflects my interest
-            in translating ideas into working hardware through troubleshooting, revision, and
-            direct engagement with materials and fabrication constraints.
+  <header class="hero">
+    <div class="container">
+      <section class="portfolio-sheet" aria-label="Portfolio introduction">
+        <div class="hero-copy">
+          <p class="page-label">Engineering Physics Portfolio</p>
+          <h1>Helena<br>Jackson</h1>
+          <p class="subtitle">Fabrication · Instrumentation · Thermal Systems · Applied Analysis</p>
+          <p class="intro">
+            I am an undergraduate Engineering Physics student interested in experimental systems,
+            fabrication, material science and analysis, thermal instrumentation, and applied
+            problem-solving. My work combines hands-on building with technical analysis, with a
+            focus on understanding how physical systems behave in practice.
           </p>
+
+          <div class="hero-actions">
+            <a class="button" href="#projects">Open project log</a>
+            <a class="button secondary" href="mailto:hjackson@college.harvard.edu">Contact</a>
+          </div>
         </div>
 
-        <div class="project-item">
-          <h3><a href="thermometry.html">Thermometry Analysis for AR Coating Autoclave</a></h3>
-          <p>
-            A technical analysis project related to thermometry and temperature interpretation
-           in a small autoclave used for anti-reflection coating fabrication in realtion to the CMB lab group's telescope. This work reflects
-           my interest in instrumentation, thermal systems, and using physics-based reasoning to
-           better understand the behavior and limitations of real experimental equipment.
-          </p>
+        <aside class="hero-visual">
+          <div class="specimen-card">
+            <div class="specimen-photo">
+              <img src="images/Headshot1.jpeg" alt="Portrait of Helena Jackson">
+            </div>
+            <div class="caption-strip">
+              <strong>Profile</strong>
+              Undergraduate Engineering Physics student interested in systems that connect theory, measurement, and physical build work.
+            </div>
+          </div>
+        </aside>
+      </section>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="note-section" id="about">
+      <aside class="section-tab"><span>01</span>Observation</aside>
+      <div class="note-panel">
+        <h2>About Me</h2>
+        <p>
+          I am especially interested in projects that show the intersection between physics and
+          engineering: fabrication, instrumentation, thermal systems, and experimental analysis.
+          I enjoy work that requires both conceptual understanding and practical execution,
+          whether that means building and iterating on a physical device or analyzing measurements
+          from a real laboratory system.
+        </p>
+        <p>
+          This portfolio highlights projects that reflect that approach: hands-on systems,
+          technical reasoning, and careful attention to how design choices affect performance.
+        </p>
+        <p class="annotation">
+          Research note: I am drawn to work where physical behavior, measurement, and design constraints meet.
+        </p>
+      </div>
+    </section>
+
+    <section class="note-section" id="projects">
+      <aside class="section-tab"><span>02</span>Project Log</aside>
+      <div class="note-panel">
+        <h2>Selected Work</h2>
+
+        <div class="project-log">
+          <article class="project-entry">
+            <div class="entry-code">Entry 01</div>
+            <div>
+              <h3>Final Fabrication Project</h3>
+              <p>
+                Designed and built a functional smart plant pot using sensors, LED indicators,
+                and an OLED display to translate environmental readings into user feedback.
+              </p>
+            </div>
+            <a class="entry-link" href="fabrication.html">View →</a>
+          </article>
+
+          <article class="project-entry">
+            <div class="entry-code">Entry 02</div>
+            <div>
+              <h3>Thermometry Analysis for AR Coating Autoclave</h3>
+              <p>
+                Analyzed temperature behavior in a small autoclave system used for anti-reflection
+                coating fabrication, with attention to measurement interpretation and stability.
+              </p>
+            </div>
+            <a class="entry-link" href="thermometry.html">View →</a>
+          </article>
         </div>
       </div>
     </section>
 
-   <section class="card">
-  <h2>Contact</h2>
+    <section class="note-section" id="methods">
+      <aside class="section-tab"><span>03</span>Methods</aside>
+      <div class="note-panel">
+        <h2>Working Interests</h2>
+        <div class="methods-grid">
+          <div class="method">
+            <h3>Build</h3>
+            <p>Hands-on fabrication, prototyping, sensor integration, and iteration under real material constraints.</p>
+          </div>
+          <div class="method">
+            <h3>Measure</h3>
+            <p>Thermal instrumentation, experimental observation, and careful interpretation of data from physical systems.</p>
+          </div>
+          <div class="method">
+            <h3>Analyze</h3>
+            <p>Physics-based reasoning, system behavior, and connecting theoretical expectations to practical results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <p>
-    Feel free to reach out to me via email or connect with me on LinkedIn.
-  </p>
-
-  <p>
-  <strong>Email:</strong>
-  <a href="mailto:hjackson@college.harvard.edu">
-    hjackson@college.harvard.edu
-  </a>
-</p>
-
-    <strong>LinkedIn:</strong>
-    <a href="https://www.linkedin.com/in/helena-jackson-457bb52a4/" target="_blank">
-      View my LinkedIn Profile →
-      </a>
-  </p>
-</section>
-
+    <section class="note-section" id="contact">
+      <aside class="section-tab"><span>04</span>Contact</aside>
+      <div class="note-panel">
+        <h2>Let’s Connect</h2>
+        <p>
+          Feel free to reach out about research, projects, or engineering physics opportunities.
+        </p>
+        <div class="contact-row">
+          <a href="mailto:hjackson@college.harvard.edu">hjackson@college.harvard.edu</a>
+          <a href="https://www.linkedin.com/in/helena-jackson-457bb52a4/" target="_blank">LinkedIn Profile →</a>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer class="site-footer">
-  <div class="container">
-    <p>© 2026 Helena Jackson</p>
-    <p>
-      
-  </div>
-</footer>
+  <footer>
+    <div class="container">
+      © 2026 Helena Jackson · Engineering Physics Portfolio
+    </div>
+  </footer>
 </body>
 </html>
